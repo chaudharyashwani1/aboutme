@@ -2,11 +2,7 @@
 
 a{ color: white; text-decoration: none; }
 header{
-	width: 100%;
 	height: 100vh;
-	background-color: background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-    position: relative;
 }
 header:before{
 	content: " ";
@@ -18,6 +14,17 @@ header:before{
 	background-image: url('ashwani.png');
 	background-size: 100% 100%;
 
+}
+
+.video-backgroud
+{
+	position: absolute;
+	right: 20;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
 
 
 }
@@ -102,10 +109,60 @@ nav{
 	height: auto;
 	border: 2px solid #fff;
 	position: absolute;
-	left: 40px;
+	left: 80px;
 	bottom: 0;
 	margin-bottom: 10px;
 
 }
 
+nav.logo{
+	width: 25%; align-items: center;
+}
 
+section a{
+	padding: 12px 30px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+section .btnone{
+	background-color: #fff;	
+	color: #000;
+}
+
+section .btntwo{
+	background-color: #fff;
+	color: #000;
+	margin-left: 30px;
+}
+.animated swing{											
+  animation-duration: 10; 
+  animation-delay: 1s;
+  animation-iteration-count: 5;
+}
+
+.change_content:after{
+	content: '';
+	animation: changetext 10s infinite linear;
+	color: #f5d400;
+}
+
+@keyframes changetext{
+	0%{content: "Hello";}
+	10%{content: "Namaskar";}
+	20%{content: "Hola";}
+	30%{content: "Bonjour";}
+	40%{content: "Sveiki";}
+	50%{content: "Bonġu";}
+	60%{content: "Salam";}
+	70%{content: "Olá";}
+	80%{content: "Bună ziua";}
+	90%{content: "Zdravo";}
+	100%{content: "Sawasdee;}
+
+}
